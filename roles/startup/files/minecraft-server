@@ -1,0 +1,3 @@
+WORK_DIR=/var/lib/minecraft-server
+JAR_DIR=/usr/local/lib/minecraft-server
+JAR=minecraft_server.jar

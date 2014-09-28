@@ -1,0 +1,4 @@
+---
+-
+   name: install ansible prerequisites
+   script: bootstrap.sh creates=/root/.ansible_prereqs_installed

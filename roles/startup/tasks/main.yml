@@ -1,0 +1,13 @@
+---
+- name: Create minecraft user
+  user: name=minecraft home=/var/lib/minecraft createhome=no system=yes shell=/bin/false
+- name: Create default minecraft working directory
+  file: path=/var/lib/minecraft-server state=directory owner=minecraft group=minecraft
+- name: Create minecraft lib directory
+  file: path=/usr/local/lib/minecraft-server state=directory owner=root group=root
+- name: Copy EULA file
+  copy: src=eula.txt dest=/var/lib/minecraft-server owner=minecraft group=minecraft
+- name: Create minecraft upstart defaults
+  copy: src=minecraft-server dest=/etc/default/minecraft-server owner=root group=root
+- name: Create minecraft upstart script
+  copy: src=minecraft-server.conf dest=/etc/init/minecraft-server.conf owner=root group=root
