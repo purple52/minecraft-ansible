@@ -36,4 +36,4 @@ The following instructions are for setting up a Minecraft server from scratch us
 
 1. Patch Spigot to latest version:
 
-        ansible-playbook --ask-sudo-pass -l minecraft update-spigot.ym
+        ansible-playbook --ask-sudo-pass -l minecraft update-spigot.yml
