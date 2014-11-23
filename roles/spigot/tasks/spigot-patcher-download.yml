@@ -1,0 +1,9 @@
+---
+- name: Download Spigot Patcher
+  get_url: url=http://www.spigotmc.org/spigot-updates/SpigotPatcher-1.0.jar dest=/usr/local/lib/spigot/jars/
+- stat: path=/usr/local/lib/spigot/jars/SpigotPatcher-1.0.jar
+  register: spigotpatcher
+- fail: msg="Spigot Patcher md5 is not correct"
+  when: spigotpatcher.stat.md5 != '33a73112e1fa90706b96cd02c87b447a'
+- file: src=/usr/local/lib/spigot/jars/SpigotPatcher-1.0.jar dest=/usr/local/lib/spigot/jars/SpigotPatcher.jar state=link
+

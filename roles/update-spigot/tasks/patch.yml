@@ -1,0 +1,8 @@
+---
+- name: Generate new Spigot jar from patch
+  command: java -jar /usr/local/lib/spigot/jars/SpigotPatcher.jar /usr/local/lib/spigot/jars/spigot1649.jar /usr/local/lib/spigot/patches/{{ spigot_patch_version }}.bps /usr/local/lib/spigot/spigot-{{ spigot_patch_version }}.jar creates=/usr/local/lib/spigot/spigot-{{ spigot_patch_version }}.jar
+- stat: path=/usr/local/lib/spigot/spigot-{{ spigot_patch_version }}.jar
+  register: spigot
+- fail: msg="Patched spigot jar md5 is not correct"
+  when: spigot.stat.md5 != '{{ spigot_patched_jar_md5 }}'
+

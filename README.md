@@ -17,8 +17,13 @@ The following instructions are for setting up a Minecraft server from scratch us
         [minecraft]
         your.hostname.or.ip.address
 
+3. Add a variable defining where to find your copy of version 1649 of the Spigot jar to `/etc/ansible/hosts`:
+
+        [minecraft:vars]
+        spigot1649_path=/path/to/spigot1649.jar
+
 3. Install the packages required for Ansible to work by running:
-    
+
         ansible-playbook --ask-sudo-pass -l minecraft bootstrap.yml
 
 ## Minecraft installation
@@ -26,3 +31,9 @@ The following instructions are for setting up a Minecraft server from scratch us
 1. Run the following to install Minecraft:
 
         ansible-playbook --ask-sudo-pass -l minecraft minecraft.yml
+
+## Spigot patcher
+
+1. Patch Spigot to latest version:
+
+        ansible-playbook --ask-sudo-pass -l minecraft update-spigot.ym

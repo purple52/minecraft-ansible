@@ -2,6 +2,4 @@
 - hosts: minecraft
   sudo: yes
   roles:
-    - java
-    - startup
-    - spigot
+    - update-spigot
