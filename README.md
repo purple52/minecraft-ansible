@@ -37,3 +37,12 @@ The following instructions are for setting up a Minecraft server from scratch us
 1. Patch Spigot to latest version:
 
         ansible-playbook --ask-sudo-pass -l minecraft update-spigot.yml
+
+## Minecraft server console
+
+To connect to the Minecraft server console:
+
+1. SSH to your server.
+2. Run:
+
+        sudo -u minecraft tmux attach-session -t minecraft
