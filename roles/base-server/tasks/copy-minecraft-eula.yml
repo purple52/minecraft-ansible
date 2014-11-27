@@ -1,3 +1,3 @@
 ---
 - name: Copy EULA file
-  copy: src=minecraft-eula/eula.txt dest=/var/lib/minecraft/eula.txt owner=root group=root
+  copy: src=minecraft-eula.txt dest={{ minecraft_home }}/eula.txt owner=root group=root

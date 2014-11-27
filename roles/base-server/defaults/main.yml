@@ -1,3 +1,9 @@
 ---
 # Should /var/lib/minecraft be an NFS mount or a real directory?
 minecraft_nfs_home: false
+# Minecraft NFS mount point
+minecraft_nfs_mount_point: /mnt/minecraft-nfs
+# Minecraft home directory
+minecraft_home: /var/lib/minecraft
+# Minecraft lib directory
+minecraft_lib: /usr/local/lib/minecraft

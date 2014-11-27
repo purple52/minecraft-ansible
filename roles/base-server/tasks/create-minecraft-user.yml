@@ -1,3 +1,3 @@
 ---
 - name: Create minecraft user
-  user: name=minecraft home=/var/lib/minecraft createhome=no system=yes shell=/bin/false
+  user: name=minecraft home={{ minecraft_home }} createhome=no system=yes shell=/bin/false
