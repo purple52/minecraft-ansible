@@ -5,3 +5,21 @@
 - include: download-spigot-patch.yml
 - include: apply-spigot-patch.yml
 - include: update-minecraft-server-symlink.yml
+- {
+    include: download-plugin.yml,
+    plugin_filename: "PermissionsBukkit-2.3.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/789/44/PermissionsBukkit-2.3.jar",
+    plugin_md5: "b01770e7e66038e808c3624769d33e95"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "Multiverse-Core-2.5.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/807/512/Multiverse-Core-2.5.jar",
+    plugin_md5: "3848d54650faf2dc24f12459093311c9"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "Multiverse-Portals-2.5.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/771/760/Multiverse-Portals-2.5.jar",
+    plugin_md5: "e6b1bc27deaaa739747bf58099c6b80b"
+  }
