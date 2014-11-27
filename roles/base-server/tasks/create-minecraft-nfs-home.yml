@@ -1,0 +1,7 @@
+---
+- name: Install nfs-common package
+  apt: name=nfs-common state=present
+- name: Create minecraft NFS mount mount
+  mount: name=/mnt/minecraft-nfs src={{ minecraft_nfs_home_fs }} fstype=nfs state=mounted
+- name: Create minecraft home directory as a symlink
+  file: src=/mnt/minecraft-nfs/minecraft dest=/var/lib/minecraft state=link owner=minecraft group=minecraft

@@ -17,26 +17,40 @@ The following instructions are for setting up a Minecraft server from scratch us
         [minecraft]
         your.hostname.or.ip.address
 
-3. Add a variable defining where to find your copy of version 1649 of the Spigot jar to `/etc/ansible/hosts`:
-
-        [minecraft:vars]
-        spigot1649_path=/path/to/spigot1649.jar
+3.
 
 3. Install the packages required for Ansible to work by running:
 
         ansible-playbook --ask-sudo-pass -l minecraft bootstrap.yml
 
-## Minecraft installation
+## Installation
 
-1. Run the following to install Minecraft:
+### Spigot
 
-        ansible-playbook --ask-sudo-pass -l minecraft minecraft.yml
+1. Add a variable defining where to find your copy of version 1649 of the Spigot jar to `/etc/ansible/hosts`:
 
-## Spigot patcher
+           [minecraft:vars]
+           spigot1649_path=/path/to/spigot1649.jar
 
-1. Patch Spigot to latest version:
+2. Run the following to configure the server to run Spigot:
 
-        ansible-playbook --ask-sudo-pass -l minecraft update-spigot.yml
+        ansible-playbook --ask-sudo-pass -l minecraft spigot-server.yml
+
+## Updating Spigot
+
+To update the patch applied to Spigot, either update the values in `roles/spigot-server/defaults/main..yml` or add
+updated versions of the following variables to the `[minecraft:vars]` section of your `/etc/ansible/hosts`:
+
+        # What version Spigot patch to apply
+        spigot_patch_version: '20141113a'
+        # MD5 checksum of the patch being applied
+        spigot_patch_md5: '12ace759005798adf91d9fe4675fff48'
+        # MD5 checksum of the finished, patched jar file
+        spigot_patched_jar_md5: '870c9021be261bd285c966c642b23c32'
+
+Then rerun:
+
+        ansible-playbook --ask-sudo-pass -l minecraft spigot-server.yml
 
 ## Minecraft server console
 

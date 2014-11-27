@@ -2,6 +2,5 @@
 - hosts: minecraft
   sudo: yes
   roles:
-    - java
-    - startup
-    - spigot
+    - base-server
+    - vanilla-server

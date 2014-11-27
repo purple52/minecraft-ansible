@@ -1,0 +1,3 @@
+---
+# Should /var/lib/minecraft be an NFS mount or a real directory?
+minecraft_nfs_home: false

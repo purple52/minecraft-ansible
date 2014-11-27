@@ -1,0 +1,3 @@
+---
+- name: Create minecraft upstart script
+  copy: src=minecraft-upstart-conf/minecraft-server.conf dest=/etc/init/minecraft-server.conf owner=root group=root

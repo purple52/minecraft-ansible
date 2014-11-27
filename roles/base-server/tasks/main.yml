@@ -1,0 +1,10 @@
+---
+- include: install-java.yml
+- include: create-minecraft-user.yml
+- include: create-minecraft-home.yml
+  when: not minecraft_nfs_home
+- include: create-minecraft-nfs-home.yml
+  when: minecraft_nfs_home
+- include: copy-minecraft-eula.yml
+- include: create-minecraft-lib-directory.yml
+- include: create-minecraft-upstart-conf.yml

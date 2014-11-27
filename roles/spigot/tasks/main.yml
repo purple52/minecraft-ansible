@@ -1,9 +1,0 @@
----
-- name: Create Spigot lib directory
-  file: path=/usr/local/lib/spigot state=directory owner=root group=root
-- name: Create Spigot Patcher directory
-  file: path=/usr/local/lib/spigot/jars state=directory owner=root group=root
-- name: Create Spigot Patches directory
-  file: path=/usr/local/lib/spigot/patches state=directory owner=root group=root
-- include: spigot-download.yml
-- include: spigot-patcher-download.yml

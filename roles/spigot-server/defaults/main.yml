@@ -1,0 +1,7 @@
+---
+# What version Spigot patch to apply
+spigot_patch_version: '20141113a'
+# MD5 checksum of the patch being applied
+spigot_patch_md5: '12ace759005798adf91d9fe4675fff48'
+# MD5 checksum of the finished, patched jar file
+spigot_patched_jar_md5: '870c9021be261bd285c966c642b23c32'

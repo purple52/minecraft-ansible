@@ -1,7 +1,7 @@
 ---
 - name: Download Spigot 1649
-  copy: src={{ spigot1649_path }} dest=/usr/local/lib/spigot/jars/spigot1649.jar
-- stat: path=/usr/local/lib/spigot/jars/spigot1649.jar
+  copy: src={{ spigot1649_path }} dest=/usr/local/lib/minecraft/spigot/jars/spigot1649.jar
+- stat: path=/usr/local/lib/minecraft/spigot/jars/spigot1649.jar
   register: spigot
 - fail: msg="Spigot 1649 md5 is not correct"
   when: spigot.stat.md5 != 'f2edc09c45b1f80237602dc0d1b05969'

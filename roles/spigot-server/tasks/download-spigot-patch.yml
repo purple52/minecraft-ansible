@@ -1,0 +1,8 @@
+---
+- name: Download Spigot patch {{ spigot_patch_version }}
+  get_url: url=http://www.spigotmc.org/spigot-updates/spigot-{{ spigot_patch_version }}.bps dest=/usr/local/lib/minecraft/spigot/patches/
+- stat: path=/usr/local/lib/minecraft/spigot/patches/spigot-{{ spigot_patch_version }}.bps
+  register: spigotpatch
+- fail: msg="Spigot patch md5 is not correct"
+  when: spigotpatch.stat.md5 != '{{ spigot_patch_md5 }}'
+

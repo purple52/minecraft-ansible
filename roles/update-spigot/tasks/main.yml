@@ -1,4 +1,0 @@
----
-- { include: download-patch.yml, spigot_patch_version: '20141113a', spigot_patch_md5: '12ace759005798adf91d9fe4675fff48', spigot_patched_jar_md5: '870c9021be261bd285c966c642b23c32' }
-- { include: patch.yml, spigot_patch_version: '20141113a', spigot_patch_md5: '12ace759005798adf91d9fe4675fff48', spigot_patched_jar_md5: '870c9021be261bd285c966c642b23c32' }
-- { include: symlink.yml, spigot_patch_version: '20141113a', spigot_patch_md5: '12ace759005798adf91d9fe4675fff48', spigot_patched_jar_md5: '870c9021be261bd285c966c642b23c32' }

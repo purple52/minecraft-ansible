@@ -1,0 +1,3 @@
+---
+- name: Create minecraft home directory
+  file: path=/var/lib/minecraft state=directory owner=minecraft group=minecraft

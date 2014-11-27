@@ -1,0 +1,6 @@
+---
+- include: install-java.yml
+- include: create-minecraft-user.yml
+- include: create-minecraft-home.yml
+- name: Create minecraft lib directory
+  file: path=/usr/local/lib/minecraft state=directory owner=root group=root

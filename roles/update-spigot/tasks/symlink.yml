@@ -1,3 +1,0 @@
----
-- name: Switch the server symlink to a Spigot version
-  file: src=/usr/local/lib/spigot/spigot-{{ spigot_patch_version }}.jar dest=/usr/local/lib/minecraft-server/minecraft_server.jar state=link
