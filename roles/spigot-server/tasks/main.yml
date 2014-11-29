@@ -1,9 +1,6 @@
 ---
 - include: create-spigot-lib-directories.yml
-- include: download-spigot-server.yml
-- include: download-spigot-patcher.yml
-- include: download-spigot-patch.yml
-- include: apply-spigot-patch.yml
+- include: copy-spigot-jar.yml
 - include: update-minecraft-server-symlink.yml
 - {
     include: download-plugin.yml,

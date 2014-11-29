@@ -1,0 +1,6 @@
+---
+- include: download-spigot-server.yml
+- include: download-spigot-patcher.yml
+- include: download-spigot-patch.yml
+- include: apply-spigot-patch.yml
+- include: update-minecraft-server-symlink.yml

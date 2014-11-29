@@ -1,4 +1,8 @@
 ---
+# Filename of the Spigot jar
+spigot_jar: 'spigot-1.8-R0.1-SNAPSHOT.jar'
+# Path for the Spigot jar - this default is the location used by the build-spigot.sh script
+spigot_jar_path: '.spigot/jars'
 # What version Spigot patch to apply
 spigot_patch_version: '20141113a'
 # MD5 checksum of the patch being applied
