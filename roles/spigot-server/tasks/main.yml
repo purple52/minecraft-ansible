@@ -4,19 +4,33 @@
 - include: update-minecraft-server-symlink.yml
 - {
     include: download-plugin.yml,
-    plugin_filename: "PermissionsBukkit-2.3.jar",
-    plugin_url: "http://dev.bukkit.org/media/files/789/44/PermissionsBukkit-2.3.jar",
-    plugin_md5: "b01770e7e66038e808c3624769d33e95"
-  }
-- {
-    include: download-plugin.yml,
     plugin_filename: "Multiverse-Core-2.5.jar",
-    plugin_url: "http://dev.bukkit.org/media/files/807/512/Multiverse-Core-2.5.jar",
-    plugin_md5: "3848d54650faf2dc24f12459093311c9"
+    plugin_url: "http://ci.onarandombox.com/job/Multiverse-Core/716/artifact/target/Multiverse-Core-2.5.jar",
+    plugin_md5: "296d523e810772a0c57ee9be5ccb92ee"
   }
 - {
     include: download-plugin.yml,
     plugin_filename: "Multiverse-Portals-2.5.jar",
-    plugin_url: "http://dev.bukkit.org/media/files/771/760/Multiverse-Portals-2.5.jar",
-    plugin_md5: "e6b1bc27deaaa739747bf58099c6b80b"
+    plugin_url: "http://repo.onarandombox.com/content/repositories/multiverse/com/onarandombox/multiverseportals/Multiverse-Portals/2.5/Multiverse-Portals-2.5.jar",
+    plugin_md5: "9c7c926d49c0b9f091f71ad77e4a3716"
   }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "PermissionsEx-1.23.4.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/909/154/PermissionsEx-1.23.4.jar",
+    plugin_md5: "dcf65a531190368110104dcb9658a7a0"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "Modifyworld.jar",
+    plugin_url: "http://dev.bukkit.org/media/files/730/259/Modifyworld.jar",
+    plugin_md5: "591b7bbf0cf5cdb73d307a4b7df75854"
+  }
+- {
+    include: download-plugin.yml,
+    plugin_filename: "Essentials-2.x-SNAPSHOT.jar",
+    plugin_url: "https://hub.spigotmc.org/jenkins/job/Spigot-Essentials/lastSuccessfulBuild/artifact/Essentials/target/Essentials-2.x-SNAPSHOT.jar",
+    plugin_md5: "1a2d27cc893000f31b51dd9115fb6c9f"
+  }
+
+

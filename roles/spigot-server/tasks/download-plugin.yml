@@ -1,10 +1,4 @@
 ---
 - name: Download plugin {{ plugin_filename }}
-  get_url: url={{ plugin_url }} dest=/var/lib/minecraft/plugins/{{ plugin_filename }}
-- name: Check {{ plugin_filename }} md5
-  stat: path=/var/lib/minecraft/plugins/{{ plugin_filename }}
-  register: plugin
-- name: Fail if {{ plugin_filename }} md5 is incorrect
-  fail: msg="Plugin {{ plugin_filename }} md5 is not correct"
-  when: plugin.stat.md5 != '{{ plugin_md5 }}'
+  get_url: url={{ plugin_url }} dest=/var/lib/minecraft/plugins/{{ plugin_filename }} checksum=md5:{{ plugin_md5 }}
 
