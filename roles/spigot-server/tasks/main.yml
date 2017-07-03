@@ -4,15 +4,15 @@
 - include: update-minecraft-server-symlink.yml
 - {
     include: download-plugin.yml,
-    plugin_filename: "Multiverse-Core-2.5.jar",
-    plugin_url: "http://ci.onarandombox.com/job/Multiverse-Core/716/artifact/target/Multiverse-Core-2.5.jar",
-    plugin_md5: "296d523e810772a0c57ee9be5ccb92ee"
+    plugin_filename: "Multiverse-Core-2.5.1-SNAPSHOT.jar",
+    plugin_url: "http://repo.onarandombox.com/content/repositories/multiverse-snapshots/com/onarandombox/multiversecore/Multiverse-Core/2.5.1-SNAPSHOT/Multiverse-Core-2.5.1-20170617.050434-3.jar",
+    plugin_md5: "0b554ed3e8ef97583b67b544b18b1e70"
   }
 - {
     include: download-plugin.yml,
-    plugin_filename: "Multiverse-Portals-2.5.jar",
-    plugin_url: "http://repo.onarandombox.com/content/repositories/multiverse/com/onarandombox/multiverseportals/Multiverse-Portals/2.5/Multiverse-Portals-2.5.jar",
-    plugin_md5: "9c7c926d49c0b9f091f71ad77e4a3716"
+    plugin_filename: "Multiverse-Portals-2.5.1-SNAPSHOT.jar",
+    plugin_url: "http://repo.onarandombox.com/content/repositories/multiverse-snapshots/com/onarandombox/multiverseportals/Multiverse-Portals/2.5.1-SNAPSHOT/Multiverse-Portals-2.5.1-20170617.050525-3.jar",
+    plugin_md5: "c214c41bc3f5a7517ba52059d4a29ea6"
   }
 - {
     include: download-plugin.yml,
@@ -23,8 +23,8 @@
 - {
     include: download-plugin.yml,
     plugin_filename: "Modifyworld.jar",
-    plugin_url: "http://dev.bukkit.org/media/files/730/259/Modifyworld.jar",
-    plugin_md5: "591b7bbf0cf5cdb73d307a4b7df75854"
+    plugin_url: "https://github.com/games647/Modifyworld/releases/download/1.12/Modifyworld.jar",
+    plugin_md5: "2b513aa7272fe11a8e0527605e4f29c4"
   }
 - {
     include: download-plugin.yml,
