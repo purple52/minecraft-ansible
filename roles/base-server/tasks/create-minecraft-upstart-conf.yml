@@ -1,3 +1,0 @@
----
-- name: Create minecraft upstart script
-  template: src=minecraft-server.conf dest=/etc/init/minecraft-server.conf owner=root group=root

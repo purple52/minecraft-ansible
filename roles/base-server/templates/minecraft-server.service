@@ -1,0 +1,19 @@
+[Unit]
+Description=Minecraft server
+
+[Service]
+Type=forking
+Environment=SHELL=/bin/bash
+Environment=TMUX_SESSION=minecraft
+Environment=TMUX_WINDOW=spigot
+Environment=JVM_OPTS="-server -XX:+UseConcMarkSweepGC -XX:MaxGCPauseMillis=50 -Xmx3G"
+Restart=on-failure
+StartLimitBurst=5
+Group=minecraft
+User=minecraft
+WorkingDirectory={{ minecraft_home }}
+ExecStart=/bin/bash {{ minecraft_home }}/minecraft-server-start.sh
+ExecStop=/bin/bash {{ minecraft_home }}/minecraft-server-stop.sh
+
+[Install]
+WantedBy=multi-user.target

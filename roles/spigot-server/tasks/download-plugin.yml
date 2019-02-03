@@ -1,4 +1,4 @@
 ---
 - name: Download plugin {{ plugin_filename }}
-  get_url: url={{ plugin_url }} dest=/var/lib/minecraft/plugins/{{ plugin_filename }} checksum=md5:{{ plugin_md5 }}
+  get_url: url={{ plugin_url }} dest=/var/lib/minecraft/plugins/{{ plugin_filename }} checksum=md5:{{ plugin_md5 }} validate_certs=no
 

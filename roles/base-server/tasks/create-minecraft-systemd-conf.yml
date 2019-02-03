@@ -1,0 +1,7 @@
+---
+- name: Create minecraft systemd service
+  template: src=minecraft-server.service dest=/etc/systemd/system/minecraft-server.service owner=root group=root
+- name: Create minecraft systemd start script
+  template: src=minecraft-server-start.sh dest={{ minecraft_home }}/minecraft-server-start.sh owner=root group=root
+- name: Create minecraft systemd stop script
+  template: src=minecraft-server-stop.sh dest={{ minecraft_home }}/minecraft-server-stop.sh owner=root group=root

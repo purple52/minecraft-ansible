@@ -7,4 +7,4 @@
   when: minecraft_nfs_home
 - include: copy-minecraft-eula.yml
 - include: create-minecraft-lib-directory.yml
-- include: create-minecraft-upstart-conf.yml
+- include: create-minecraft-systemd-conf.yml
