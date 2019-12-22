@@ -1,6 +1,6 @@
 ---
 # Filename of the Spigot jar
-spigot_jar: 'spigot-1.14.4.jar'
+spigot_jar: 'spigot-1.15.1.jar'
 # Path for the Spigot jar - this default is the location used by the build-spigot.sh script
 spigot_jar_path: '.spigot/build'
 # What version Spigot patch to apply

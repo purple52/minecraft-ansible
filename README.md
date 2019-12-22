@@ -21,7 +21,7 @@ The following instructions are for setting up a Minecraft server from scratch us
 
 3. Install the packages required for Ansible to work by running:
 
-        ansible-playbook --ask-sudo-pass -l minecraft bootstrap.yml
+        ansible-playbook -K -l minecraft bootstrap.yml
 
 ## Installation
 
@@ -34,7 +34,7 @@ The following instructions are for setting up a Minecraft server from scratch us
 
 2. Run the following to configure the server to run Spigot:
 
-        ansible-playbook --ask-sudo-pass -l minecraft spigot-server.yml
+        ansible-playbook -K-l minecraft spigot-server.yml
 
 ## Updating Spigot
 
@@ -50,7 +50,7 @@ updated versions of the following variables to the `[minecraft:vars]` section of
 
 Then rerun:
 
-        ansible-playbook --ask-sudo-pass -l minecraft spigot-server.yml
+        ansible-playbook -K -l minecraft spigot-server.yml
 
 ## Minecraft server console
 

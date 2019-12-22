@@ -1,6 +1,6 @@
 ---
 - hosts: minecraft
-  sudo: yes
+  become: yes
   roles:
     - base-server
     - vanilla-server

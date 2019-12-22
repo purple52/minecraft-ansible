@@ -2,52 +2,39 @@
 - include: create-spigot-lib-directories.yml
 - include: copy-spigot-jar.yml
 - include: update-minecraft-server-symlink.yml
-- {
-    include: download-plugin.yml,
-    plugin_filename: "Multiverse-Core-2.6.0.jar",
-    plugin_url: "https://ci.onarandombox.com/job/Multiverse-Core/lastSuccessfulBuild/artifact/target/Multiverse-Core-2.6.0.jar",
-    plugin_md5: "5894d6774673dfa15b6b3adb1c2b454c"
-  }
-- {
-    include: download-plugin.yml,
-    plugin_filename: "Multiverse-Portals-2.5.1-SNAPSHOT.jar",
-    plugin_url: "http://repo.onarandombox.com/content/repositories/multiverse-snapshots/com/onarandombox/multiverseportals/Multiverse-Portals/2.5.1-SNAPSHOT/Multiverse-Portals-2.5.1-20170617.050525-3.jar",
-    plugin_md5: "c214c41bc3f5a7517ba52059d4a29ea6"
-  }
-- {
-    include: download-plugin.yml,
-    plugin_filename: "Essentials-2.x-SNAPSHOT.jar",
-    plugin_url: "https://hub.spigotmc.org/jenkins/job/spigot-essentials/lastSuccessfulBuild/artifact/Essentials/target/Essentials-2.x-SNAPSHOT.jar",
-    plugin_md5: "289608dfb182e0cd66f3a543cdd78631"
-  }
-- {
-    include: download-plugin.yml,
-    plugin_filename: "LuckPerms-Bukkit-4.3.62.jar",
-    plugin_url: "https://ci.lucko.me/job/LuckPerms/839/artifact/bukkit/build/libs/LuckPerms-Bukkit-4.3.62.jar",
+- include_tasks: download-plugin.yml
+  vars:
+    plugin_filename: "Multiverse-Core-4.1.0.jar"
+    plugin_url: "https://dl.dropboxusercontent.com/s/ide0vq0ys3ac0x3/Multiverse-Core-4.1.0.jar?dl=0"
+    plugin_md5: "2a562ee4b5ed7676931ed8ca5af75cd1"
+- include_tasks: download-plugin.yml
+  vars:
+    plugin_filename: "Multiverse-Portals-4.1.0.jar"
+    plugin_url: "https://dl.dropboxusercontent.com/s/ufhdr5k6w2itdk9/Multiverse-Portals-4.1.0.jar?dl=0"
+    plugin_md5: "fcf4ff85ae530056d212095fa2a8895f"
+- include_tasks: download-plugin.yml
+  vars:
+    plugin_filename: "EssentialsX-2.17.1.0.jar"
+    plugin_url: "https://dl.dropboxusercontent.com/s/9r8937xgyd1xtqa/EssentialsX-2.17.1.0.jar?dl=0"
+    plugin_md5: "68114ed2533111cff6a532c83e7eeb8c"
+- include_tasks: download-plugin.yml
+  vars:
+    plugin_filename: "LuckPerms-Bukkit-4.3.62.jar"
+    plugin_url: "https://ci.lucko.me/job/LuckPerms/839/artifact/bukkit/build/libs/LuckPerms-Bukkit-4.3.62.jar"
     plugin_md5: "4a637699928da021c6f480844bee7f98"
-}
-- {
-    include: download-plugin.yml,
-    plugin_filename: "worldedit-bukkit-7.0.0-beta-04.jar",
-    plugin_url: "https://media.forgecdn.net/files/2646/337/worldedit-bukkit-7.0.0-beta-04.jar",
-    plugin_md5: "b23f342140386eaa625dde2aecb92281"
-}
-- {
-    include: download-plugin.yml,
-    plugin_filename: "WarpSystem.jar",
-    plugin_url: "https://github.com/CodingAir/WarpSystem/releases/download/3.1.7/WarpSystem.jar",
-    plugin_md5: "2a9b484380e39e6ef2b8617da026ab0e"
-}
-- {
-    include: download-plugin.yml,
-    plugin_filename: "perworldinventory-kt-2.2.1.jar",
-    plugin_url: "https://github.com/EbonJaeger/perworldinventory-kt/releases/download/v2.2.1/perworldinventory-kt-2.2.1.jar",
+- include_tasks: download-plugin.yml
+  vars:
+    plugin_filename: "worldedit-bukkit-7.1.0-beta-1.jar"
+    plugin_url: "https://media.forgecdn.net/files/2844/696/worldedit-bukkit-7.1.0-beta-1.jar"
+    plugin_md5: "68cfb73ff106a6f91e5bf2853329bea6"
+- include_tasks: download-plugin.yml
+  vars:
+    plugin_filename: "WarpSystem.jar"
+    plugin_url: "https://dl.dropboxusercontent.com/s/n410oxyhso0we6y/WarpSystem_v4.1.10-free.jar?dl=0"
+    plugin_md5: "679e6b8b4b6424f483857fa892484ccf"
+- include_tasks: download-plugin.yml
+  vars:
+    plugin_filename: "perworldinventory-kt-2.2.1.jar"
+    plugin_url: "https://github.com/EbonJaeger/perworldinventory-kt/releases/download/v2.2.1/perworldinventory-kt-2.2.1.jar"
     plugin_md5: "be6d8c3e35c37e7ab1d8e7f0e23292d5"
-}
-- {
-    include: download-plugin.yml,
-    plugin_filename: "Ridables-2.56.jar",
-    plugin_url: "http://pl3x.net:8081/plugin/repository/everything/net/pl3x/bukkit/ridables/Ridables/2.56/Ridables-2.56.jar",
-    plugin_md5: "b354e8f8e3626d35ad1fcfa090f3e97c"
-}
 
