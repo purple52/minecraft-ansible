@@ -29,11 +29,6 @@
     plugin_md5: "68cfb73ff106a6f91e5bf2853329bea6"
 - include_tasks: download-plugin.yml
   vars:
-    plugin_filename: "WarpSystem.jar"
-    plugin_url: "https://dl.dropboxusercontent.com/s/n410oxyhso0we6y/WarpSystem_v4.1.10-free.jar?dl=0"
-    plugin_md5: "679e6b8b4b6424f483857fa892484ccf"
-- include_tasks: download-plugin.yml
-  vars:
     plugin_filename: "perworldinventory-kt-2.2.1.jar"
     plugin_url: "https://github.com/EbonJaeger/perworldinventory-kt/releases/download/v2.2.1/perworldinventory-kt-2.2.1.jar"
     plugin_md5: "be6d8c3e35c37e7ab1d8e7f0e23292d5"
